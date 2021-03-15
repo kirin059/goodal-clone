@@ -16,6 +16,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
     line-height: 1.5em;
+    letter-spacing: -0.1px;
     color: var(--color-grey);
     background: #fff;
 }
@@ -71,13 +72,13 @@ nav {
 }
 
 /* nav logo */
-.main_nav{
+.head_nav{
     display: flex;
     height: 100%;
     text-align: center;
 }
 
-.main_nav h1 { 
+.head_nav h1 { 
     display: block;
     width: 160px;
     height: 60px;
@@ -158,4 +159,10 @@ fieldset {
     letter-spacing: -0.1px;
     text-align: center;
     text-decoration: none;
+}
+
+/* main */
+.slider {
+    margin: 0 0 60px;
+    height: 650px;
 }

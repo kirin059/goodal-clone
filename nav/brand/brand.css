@@ -72,13 +72,13 @@ nav {
 }
 
 /* nav logo */
-.main_nav{
+.head_nav{
     display: flex;
     height: 100%;
     text-align: center;
 }
 
-.main_nav h1 { 
+.head_nav h1 { 
     display: block;
     width: 160px;
     height: 60px;
@@ -158,5 +158,54 @@ fieldset {
     font-size: 15px;
     letter-spacing: -0.1px;
     text-align: center;
+    text-decoration: none;
+}
+
+/* main head*/
+.main_head {
+    position: relative;
+    width: 1000px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.main_head h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main_head span {
+    position: absolute;
+    top: 0;
+    color: var(--color-grey);
+    right: 0;
+    font-size: 11px;
+}
+
+.main_nav {
+    width: 1000px;
+    margin: 40px auto 20px;
+    overflow: hidden;
+}
+
+.main_nav ul {
+    display: flex;
+}
+
+.main_li {
+    width: 33.3%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--color-lightgrey);
+}
+.main_li a {
+    display: block;  
+    background: #444444;
+    color: #fff;
+    border: 1px solid #203e09;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
 }
