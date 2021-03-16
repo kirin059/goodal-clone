@@ -160,3 +160,12 @@ fieldset {
     text-align: center;
     text-decoration: none;
 }
+
+
+/* footer */
+
+.footer {
+    padding: 0 0 50px;
+    background: #ededed;
+    border-top: 1px solid #ccc;
+}
