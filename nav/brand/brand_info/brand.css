@@ -83,7 +83,7 @@ nav {
     width: 160px;
     height: 60px;
     margin: 21px auto;
-    background-image: url(../image/main-logo.png);
+    background-image: url(../../../image/main-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -191,6 +191,8 @@ fieldset {
 
 .main_nav ul {
     display: flex;
+    width: 100%;
+    list-style: none;
 }
 
 .main_li {
@@ -199,13 +201,226 @@ fieldset {
     line-height: 40px;
     text-align: center;
     border: 1px solid var(--color-lightgrey);
+    border-bottom: 1px solid #9f9f9f;
 }
+
 .main_li a {
-    display: block;  
-    background: #444444;
-    color: #fff;
-    border: 1px solid #203e09;
-    font-size: 14px;
-    font-weight: 600;
+    color: #444444;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.current {
+    background: #444444;
+}
+
+.current a{
+    color: #fff;
+    font-weight: 600;
+}
+/* js 
+.main_li a {
+    background: #444444; 
+    color: #fff; 
+}
+*/
+
+
+/* main image */
+.img_container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    letter-spacing: -0.05em;
+    line-height: 1.6;
+}
+
+.img_first {
+    display: flex;
+    flex-direction: column;
+    background: url(../../img/brand_bg_01.jpg) no-repeat 0 0;
+    margin-bottom: 155px;
+    padding: 175px 65px 0;
+    text-align: center;
+}
+
+.img_first_title {
+    color: #464646;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.img_first img {
+    width: 300px;
+    margin: 35px auto 50px;
+    padding: 0;
+    font-size: 1em;
+}
+
+.img_first p {
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.img_first p strong {
+    font-weight: 400;
+}
+
+.img_first h3 {
+    position: absolute;
+    top: 690px;
+    left: 300px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #363636;
+}
+
+.img_first_story {
+    font-size: 24px;
+    padding-top: 30px;
+    margin: 235px 0 40px;
+    border-top: 1px solid #959595;
+}
+
+.img_first_slogan {
+    margin-bottom: 40px;
+}
+
+.img_first_last {
+    margin: 40px 0 0;
+}
+
+/* img_second, third, forth, fifth, sixth */
+.img_second, .img_third, .img_forth {
+    position: relative;
+    padding: 0 5%;
+    margin-bottom: 180px;
+    line-height: 1.2;
+    height: 370px;
+}
+
+.img_second_img {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    letter-spacing: -0.025em;
+}
+
+.img_second_img img:first-child {
+    position: absolute;
+    top:0;
+    right: 20px;
+    width: 250px;
+}
+
+.img_second_img img:last-child {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 150px;
+    height: 189px;;
+}
+
+.img_second_text, .img_forth_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    padding-top: 25px;
+    width: 530px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.img_second_first, .img_third_first, .img_forth_first {
+    line-height: 1.2;
+    font-size: 23px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #7d7d7d;
+}
+
+.img_second_sloganE, .img_third_sloganE, .img_forth_sloganE {
+    margin: 8px 0 10px;
+    color: #252525;
+    font-size: 42px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900;
+}
+
+.img_second_sloganK, .img_third_sloganK, .img_forth_sloganK {
+    padding-bottom: 12px;
+    color: #252525;
+    border-bottom: 1px solid #959595;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.img_second_last, .img_third_last, .img_forth_last {
+    margin: 12px 0 20px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.img_third_img {
+    position: relative;
+    float: right;
+    width: 370px;
+    height: 370px;
+    letter-spacing: -0.025em;
+}
+
+.img_third_img img:first-child {
+    float: right;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 170px;
+    height: 219px;
+    z-index: 501;
+}
+
+.img_third_img img:last-child {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 170x;
+    height: 189px;;
+}
+
+.img_third_text {
+    position: absolute;
+    float: left;
+    top: 0;
+    width: 560px;
+    font-size: 23px;
+    text-align: left;
+}
+
+/* forth */
+.img_forth_text {
+    position: absolute;
+    float: right;
+    top: 0;
+    width: 530px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.img_forth_img{
+    position: relative;
+    letter-spacing: -0.025em;
+}
+
+.img_forth_img img{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    letter-spacing: -0.025em;
 }
