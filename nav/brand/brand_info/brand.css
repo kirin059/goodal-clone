@@ -473,3 +473,30 @@ fieldset {
     height: 143px;
     letter-spacing: -0.025em;
 }
+
+.img_sixth_img_first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 145px;
+    z-index: 10;
+}
+
+.img_sixth_img_second {
+    position: absolute;
+    top: 105px;
+    left: -100px;
+    width: 340px;
+    height: 145px;
+    z-index: 20;
+}
+
+.img_sixth_img_third {
+    position: absolute;
+    top: 220px;
+    left: -435px;
+    width: 340px;
+    height: 145px;
+    z-index: 30;
+}
