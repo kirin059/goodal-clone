@@ -295,7 +295,7 @@ fieldset {
 }
 
 /* img_second, third, forth, fifth, sixth */
-.img_second, .img_third, .img_forth {
+.img_second, .img_third, .img_forth, .img_fifth, .img_sixth {
     position: relative;
     padding: 0 5%;
     margin-bottom: 180px;
@@ -325,7 +325,7 @@ fieldset {
     height: 189px;;
 }
 
-.img_second_text, .img_forth_text {
+.img_second_text {
     position: absolute;
     top: 0;
     right: 0;
@@ -336,14 +336,14 @@ fieldset {
     text-align: left;
 }
 
-.img_second_first, .img_third_first, .img_forth_first {
+.img_second_first, .img_third_first, .img_forth_first, .img_fifth_first, .img_sixth_first {
     line-height: 1.2;
     font-size: 23px;
     font-family: 'Noto Sans KR', sans-serif;
     color: #7d7d7d;
 }
 
-.img_second_sloganE, .img_third_sloganE, .img_forth_sloganE {
+.img_second_sloganE, .img_third_sloganE, .img_forth_sloganE, .img_fifth_sloganE, .img_sixth_sloganE {
     margin: 8px 0 10px;
     color: #252525;
     font-size: 42px;
@@ -351,7 +351,7 @@ fieldset {
     font-weight: 900;
 }
 
-.img_second_sloganK, .img_third_sloganK, .img_forth_sloganK {
+.img_second_sloganK, .img_third_sloganK, .img_forth_sloganK, .img_fifth_sloganK, .img_sixth_sloganK {
     padding-bottom: 12px;
     color: #252525;
     border-bottom: 1px solid #959595;
@@ -361,12 +361,14 @@ fieldset {
     line-height: 1.2;
 }
 
-.img_second_last, .img_third_last, .img_forth_last {
+.img_second_last, .img_third_last, .img_forth_last, .img_fifth_last, .img_sixth_last  {
     margin: 12px 0 20px;
     font-size: 19px;
     font-weight: 300;
     line-height: 2em;
 }
+
+/* third */ 
 
 .img_third_img {
     position: relative;
@@ -408,6 +410,7 @@ fieldset {
     position: absolute;
     float: right;
     top: 0;
+    right: 50px;
     width: 530px;
     font-size: 23px;
     text-align: left;
@@ -422,5 +425,51 @@ fieldset {
     position: relative;
     width: 340px;
     height: 340px;
+    letter-spacing: -0.025em;
+}
+
+/* fifth */ 
+.img_fifth_text {
+    float: left;
+    top: 0;
+    right: 0;
+    width: 530px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.img_fifth_img{
+    position: relative;
+    letter-spacing: -0.025em;
+}
+
+.img_fifth_img img{
+    position: absolute;
+    right: 0;
+    width: 340px;
+    height: 445px;
+    letter-spacing: -0.025em;
+}
+
+/* sixth */
+.img_sixth_text {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 50px;
+    width: 530px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.img_sixth_img{
+    position: relative;
+    letter-spacing: -0.025em;
+}
+
+.img_sixth_img img{
+    position: relative;
+    width: 216px;
+    height: 143px;
     letter-spacing: -0.025em;
 }
