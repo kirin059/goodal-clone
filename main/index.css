@@ -170,13 +170,19 @@ fieldset {
 }
 
 .slide_container {
+    display: flex;
     width: 1400%; 
+    overflow: hidden;
     /* transition-duration: 0s;
     transform: translate3d(-1878px, 0px, 0px); */
 }
 
 .slide_li {
     width: 1953px;
+}
+
+.hidden {
+    display: none;
 }
 
 .flex-prev {
