@@ -86,16 +86,18 @@
 .main_article p {
     max-width: 100%;
     margin: 20px 0 40px;
-    padding: 0 40px 0;
+    padding: 35px 40px 0;
     height: 310px;
     background: url(../cop_info/image/company_bg.jpg) no-repeat center;
     background-size: cover;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.main_article p strong {
+.main_article strong {
     margin-bottom: 25px;
     font-size: 54px;
-    font-weight: 600;
+    font-weight: 600;   
     line-height: 52px;
     text-align: left;
     font-family: 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
