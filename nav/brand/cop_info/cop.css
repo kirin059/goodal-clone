@@ -1,3 +1,21 @@
+/* nav logo */
+.main_nav{
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.main_nav h1 { 
+    display: block;
+    width: 160px;
+    height: 60px;
+    margin: 21px auto;
+    background-image: url(../../../image/main-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 /* main head*/
 .main_head {
     position: relative;

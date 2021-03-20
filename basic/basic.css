@@ -79,7 +79,7 @@ nav {
     text-align: center;
 }
 
-.main_nav h1 { 
+/* .main_nav h1 { 
     display: block;
     width: 160px;
     height: 60px;
@@ -88,7 +88,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-}
+} */
 
 /* nav search*/
 fieldset {
