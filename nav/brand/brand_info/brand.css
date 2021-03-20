@@ -240,7 +240,7 @@ fieldset {
 .img_first {
     display: flex;
     flex-direction: column;
-    background: url(../../img/brand_bg_01.jpg) no-repeat 0 0;
+    background: url(../brand_info/img/brand_bg_01.jpg) no-repeat 0 0;
     margin-bottom: 155px;
     padding: 175px 65px 0;
     text-align: center;
@@ -392,9 +392,10 @@ fieldset {
 .img_third_img img:last-child {
     position: absolute;
     bottom:0;
-    left: 0;
+    left: 75px;
     width: 170x;
-    height: 189px;;
+    height: 189px;
+    z-index: 502;
 }
 
 .img_third_text {

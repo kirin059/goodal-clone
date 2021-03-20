@@ -134,14 +134,14 @@ fieldset {
     overflow: visible;
     background-color: #444;;
     text-align: left;
+    z-index: 1;
 }
 
 .sub_nav ul {
     display: block;
-    position: relative;
     width: 1000px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .sub_li {
@@ -161,17 +161,42 @@ fieldset {
     text-align: center;
     text-decoration: none;
 }
+.dropdown {
+    position: absolute;
+    top: 48px;
+    /* margin: 0 0 0 35px; */
+    max-width: 180px;
+    width: 25%;
+    border: 1px solid #515151;
+    background: #fff;
+    box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
+}
+
+.dropdown_li{
+    display: none;
+    z-index: 2;
+    padding: 10px;
+    overflow: hidden;
+    transition: border-color 200ms ease-in, padding 200ms ease-in,
+      max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+
+.dropdown_li.show {
+    display: block;
+}
 
 /* main */
 .slider {
-    /* margin: 0 0 60px; */
+    margin: 0 0 60px;
     height: 650px;
     margin: 0 0 60px;
 }
 
 .slide_container {
     display: flex;
-    width: 1400%; 
+    margin: 0 auto;
+    width: 100%; 
     overflow: hidden;
     /* transition-duration: 0s;
     transform: translate3d(-1878px, 0px, 0px); */
