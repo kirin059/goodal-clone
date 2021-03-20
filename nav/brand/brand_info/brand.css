@@ -50,6 +50,15 @@
     font-weight: 400;
 }
 
+.main_li:hover {
+    color: #fff;
+    background-color: #444444;
+}
+
+.main_li a:hover {
+    color: #fff;
+}
+
 .current {
     background: #444444;
 }

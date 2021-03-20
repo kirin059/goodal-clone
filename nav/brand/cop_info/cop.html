@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="brand.css" rel="stylesheet" />
+    <link href="./cop.css" rel="stylesheet" />
     <link href="../../../basic/basic.css" rel="stylesheet" />
+
+    <script src="../../../basic/basic.js" defer></script>
     <title>Goodal</title>
 </head>
 
@@ -40,27 +42,70 @@
         <!--sub nav-->
         <div class="sub_nav">
             <ul>
-                <li class="sub_li"><a href="/">브랜드</a></li>
-                <li class="sub_li"><a href="/">제품</a></li>
-                <li class="sub_li"><a href="/">미디어</a></li>
-                <li class="sub_li"><a href="/">커뮤니티</a></li>
+                <li class="sub_li">
+                    <a href="../nav/brand/brand_info/brand.html">브랜드</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">브랜드 소개</li>
+                        <li class="dropdown_li">매장 소개</li>
+                        <li class="dropdown_li">(주)클리오 기업소개</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="/">제품</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">BEST</li>
+                        <li class="dropdown_li">NEW</li>
+                        <li class="dropdown_li">카테고리별</li>
+                        <li class="dropdown_li">고민별</li>
+                        <li class="dropdown_li">원물별</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="/">미디어</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">영상광고</li>
+                        <li class="dropdown_li">인쇄광고</li>
+                        <li class="dropdown_li">매거진</li>
+                        <li class="dropdown_li">뉴스</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="/">커뮤니티</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">베스트리뷰</li>
+                        <li class="dropdown_li">sns</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
-        <!-- main -->
         <div class="main_head">
             <h2> 브랜드 </h2>
             <h3> 브랜드 매장, 회사 정보 소개</h3>
-            <span> Home > 브랜드 > 브랜드 소개</span>
+            <span> Home > 브랜드 > (주)클리오 회사소개</span>
         </div>
 
         <div class="main_nav">
             <ul>
-                <li class="main_li current"> <a href="brand.html"> 브랜드 소개 </a> </li>
+                <li class="main_li"> <a href="brand.html"> 브랜드 소개 </a> </li>
                 <li class="main_li"> <a href="../store_info/store.html"> 매장 소개 </a> </li>
-                <li class="main_li"> <a href="../cop_info/cop.html"> (주)클리오 기업소개 </a> </li>
+                <li class="main_li current"> <a href="../cop_info/cop.html"> (주)클리오 기업소개 </a> </li>
             </ul>
         </div>
+
+        <!--main article-->
+        <div class="main_article">
+            <img src="./image/company_top_logo.jpg" alt="brand_logo" />
+            <p>
+                <strong>EVERY POUCH <br>
+                    ONE CLIO</strong> <br>
+                <span> 클리오는 화장품을 통하여 새로운 변화를 즐기는</span><br>
+                <span>사람에게 <em>자신감과 즐거움을 제공</em> 하겠다는</span><br>
+                <span>원대한 비전을 가지고 있습니다.</span>
+            </p>
+        </div>
+
+
 
         <!--footer-->
         <div class="footer">
