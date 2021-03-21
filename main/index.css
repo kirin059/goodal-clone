@@ -182,6 +182,10 @@ fieldset {
       max-height 200ms ease-in, box-shadow 200ms ease-in;
 }
 
+.dropdown_li:hover {
+    color: #fff;  
+    background-color: #444;; 
+}
 
 .dropdown_li.show {
     display: block;

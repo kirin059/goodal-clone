@@ -73,13 +73,13 @@ nav {
 }
 
 /* nav logo */
-.main_nav{
+.head_nav{
     display: flex;
     height: 100%;
     text-align: center;
 }
 
-/* .main_nav h1 { 
+/* .head_nav h1 { 
     display: block;
     width: 160px;
     height: 60px;
@@ -180,6 +180,11 @@ fieldset {
     overflow: hidden;
     transition: border-color 200ms ease-in, padding 200ms ease-in,
       max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.dropdown_li:hover {
+    color: #fff;  
+    background-color: #444;; 
 }
 
 .dropdown_li.show {
