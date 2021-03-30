@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="./cop.css" rel="stylesheet" />
+    <link href="./category.css" rel="stylesheet" />
     <link href="../../../basic/basic.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../../basic/basic.js" defer></script>
@@ -45,7 +45,7 @@
             <div class="modal_content">
 
                 <form id="login_form">
-                    <h1>Sign Up <img src="../../../image/main-logo.png"></h1>
+                    <a href="../nav/brand/brand_info/brand.html">브랜드</a>
                     <div class="form-control">
                         <label for="username">User Name</label>
                         <input id="username" type="text" placeholder="Enter username" />
@@ -84,7 +84,7 @@
                     </ul>
                 </li>
                 <li class="sub_li">
-                    <a href="../../product/best/best.html">제품</a>
+                    <a href="/">제품</a>
                     <ul class="dropdown">
                         <li class="dropdown_li">BEST</li>
                         <li class="dropdown_li">NEW</li>
@@ -113,39 +113,110 @@
         </div>
 
         <div class="main_head">
-            <h2> 브랜드 </h2>
-            <h3> 브랜드 매장, 회사 정보 소개</h3>
-            <span> Home > 브랜드 > (주)클리오 회사소개</span>
+            <h2> 제품 </h2>
+            <h3> 구달의 베스트상품, 신상품, 카테고리별 상품을 만나보세요</h3>
+            <span> Home > 제품 > 유형별 > 에센스/세럼</span>
         </div>
 
         <div class="main_nav">
             <ul>
-                <li class="main_li"> <a href="../brand_info/brand.html"> 브랜드 소개 </a> </li>
-                <li class="main_li"> <a href="../store_info/store.html"> 매장 소개 </a> </li>
-                <li class="main_li current"> <a href="../cop_info/cop.html"> (주)클리오 기업소개 </a> </li>
+                <li class="main_li"> <a href="../best/best.html"> BEST </a> </li>
+                <li class="main_li"> <a href="../new/new.html"> NEW </a> </li>
+                <li class="main_li current"> <a href="./category.html"> 카테고리별 </a> </li>
             </ul>
         </div>
 
         <!--main article-->
-        <div class="main_article">
-            <img src="./image/company_top_logo.jpg" alt="brand_logo" />
-            <p>
+        <div class="product_container">
+            <div class="product_lists">
+                <ul>
+                    <li>
+                        <a href="view.asp?product_cd=P202009216335">
+                            <div class="thum">
+                                <img src="../category/image/product_01.jpg" alt="product_image" />
+                            </div>
+                            <p>맑은 어성초 진정 에센스(스프레이) 80ml</p>
+                            <p> 17,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P201908139354">
+                            <div class="thum">
+                                <img src="../category/image/product_02.jpg" alt="product_image" />
+                            </div>
+                            <p>사과 아하 매끈 앰플 30ml</p>
+                            <p> 22,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P201805252318">
+                            <div class="thum">
+                                <img src="../category/image/product_03.jpg" alt="product_image" />
+                            </div>
+                            <p>[블프리미티드] 청귤 비타C 잡티세럼 플러스 대용량 기획</p>
+                            <p> 40,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P202002208536">
+                            <div class="thum">
+                                <img src="../category/image/product_04.jpg" alt="product_image" />
+                            </div>
+                            <p>청귤 비타C 잡티세럼 플러스 더블 에디션 기획세트</p>
+                            <p> 43,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P201903124097">
+                            <div class="thum">
+                                <img src="../category/image/product_05.jpg" alt="product_image" />
+                            </div>
+                            <p>청귤 비타C 잡티세럼 플러스 기획세트</p>
+                            <p> 24,000</p>
+                        </a>
+                    </li>
 
-                <strong>EVERY POUCH <br>
-                    ONE CLIO</strong>
+                    <li>
+                        <a href="view.asp?product_cd=P202009212849">
+                            <div class="thum">
+                                <img src="../category/image/product_06.jpg" alt="product_image" />
+                            </div>
+                            <p>[하트에디션] 맑은 어성초 진정 에센스 기획세트</p>
+                            <p> 30,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P201908195761">
+                            <div class="thum">
+                                <img src="../category/image/product_07.jpg" alt="product_image" />
+                            </div>
+                            <p>맑은 어성초 진정 에센스 기획세트</p>
+                            <p> 30,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="view.asp?product_cd=P202009238448">
+                            <div class="thum">
+                                <img src="../category/image/product_08.jpg" alt="product_image" />
+                            </div>
+                            <p>[하트에디션] 맑은 어성초 진정 에센스 더블에디션 기획</p>
+                            <p> 24,000</p>
+                        </a>
+                    </li>
 
-                <br><br>
-                <span> 클리오는 화장품을 통하여 새로운 변화를 즐기는</span><br>
-                <span>사람에게 <em>자신감과 즐거움을 제공</em> 하겠다는</span><br>
-                <span>원대한 비전을 가지고 있습니다.</span>
-            </p>
+
+                    <li>
+                        <a href="view.asp?product_cd=P202008284229">
+                            <div class="thum">
+                                <img src="../category/image/product_09.jpg" alt="product_image" />
+                            </div>
+                            <p>맑은 어성초 진정 에센스 더블에디션 기획세트</p>
+                            <p> 24,000</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p class="hp_btn">
-            <a href="http://company.cliocosmetic.com/ko/main/main.asp" target="_blank">
-                (주)클리오 기업홈페이지</a>
-        </p>
-
-
 
         <!--footer-->
         <div class="footer">
@@ -189,11 +260,10 @@
                     <span>LUNCH 12:30 ~ 13:30 (토/일/공휴일 휴무)</span>
                 </div>
             </div>
-
         </div>
 
-        <script src="../../../basic/basic.js"></script>
     </div>
+    <script src="../../../basic/basic.js"></script>
 </body>
 
 </html>

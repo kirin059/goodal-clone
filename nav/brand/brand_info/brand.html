@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link href="./brand.css" rel="stylesheet" />
     <link href="../../../basic/basic.css" rel="stylesheet" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../../basic/basic.js" defer></script>
     <title>Goodal</title>
 </head>
@@ -26,10 +26,11 @@
                     <li class="lang">ENG</li>
                     <li class="lang">CHN</li>
                 </ul>
+                <button class="open">Log In</button>
             </div>
             <div class="head_nav">
                 <h1>
-                    <a href="../../../main/index.html"></a>
+                    <a href="index.html"></a>
                 </h1>
             </div>
             <fieldset>
@@ -39,9 +40,41 @@
 
         </nav>
 
+        <!-- modal-->
+        <div class="modal_bg">
+            <div class="modal_content">
+
+                <form id="login_form">
+                    <h1>Sign Up <img src="../../../image/main-logo.png"></h1>
+                    <div class="form-control">
+                        <label for="username">User Name</label>
+                        <input id="username" type="text" placeholder="Enter username" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" placeholder="Enter email" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Enter password" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Password Check</label>
+                        <input id="password2" type="password" placeholder="Confirm password" />
+                        <small>Error message</small>
+                    </div>
+                    <button id="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
         <!--sub nav-->
         <div class="sub_nav">
-            <ul>
+            <ul class="sub_nav_lists">
                 <li class="sub_li">
                     <a href="../nav/brand/brand_info/brand.html">브랜드</a>
                     <ul class="dropdown">
@@ -261,6 +294,7 @@
 
         </div>
     </div>
+    <script src="../../../basic/basic.js"></script>
 </body>
 
 </html>
