@@ -6,7 +6,6 @@ const drop = document.querySelectorAll('.dropdown')
 const dropdown = document.querySelectorAll('.dropdown_li');
 
 menu.forEach(item => {
-    //console.log(item)
     item.addEventListener('mouseover', shwoDropLists)
     dropdown.forEach(item => {
         item.addEventListener('mouseover', shwoDropLists)
@@ -21,7 +20,6 @@ menu.forEach(item => {
 })
 
 function shwoDropLists(e) {
-
     let hoverNav;
 
     if (e.path[0].localName === 'a') {
@@ -114,46 +112,43 @@ prevBtn.addEventListener('click', e => {
 
 
 // modal
-
 $(document).ready(function () {
     $('.open').click(function () {
         $('.modal_bg').css({ "display": "block" })
     })
+
+    $('.closeBtn').click(function () {
+        $('.modal_bg').css({ "display": "none" })
+    })
 });
 
 
-
-
 // log-in
-
 const form = document.getElementById("login_form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 
-// input에 error메시지(+ outline) 뜨는 함수 기능 구현
+
 function showError(input, message) {
     console.log('input')
     const formControl = input.parentElement;
-    formControl.className = "form-control error"; // css 적용
+    formControl.className = "form-control error"; 
 
     const small = formControl.querySelector("small");
     small.innerText = message;
 }
 
-// input에 success outline 뜨는 함수 기능 구현
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = "form-control success";
 }
 
-// id를 대문자로 변환하여 텍스트 출력
 function idName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-// email 유효성 검사
 function checkEmail(input) {
     if (input.value.trim() && input.value.includes("@")) {
         showSuccess(input);
@@ -162,7 +157,6 @@ function checkEmail(input) {
     }
 }
 
-// Check input length
 function checkLength(input, min, max) {
     if (input.value.length < min) {
         showError(input, `${getFieldName(input)} must be at least ${min} characters`);
@@ -173,14 +167,12 @@ function checkLength(input, min, max) {
     }
 }
 
-// Check passwords match
 function checkPasswordsMatch(input1, input2) {
     if (input1.value !== input2.value) {
         showError(input2, "Passwords do not match");
     }
 }
 
-// Check required fields
 function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function (input) {
@@ -196,13 +188,11 @@ function checkRequired(inputArr) {
     return isRequired;
 }
 
-// Get fieldname
 function getFieldName(input) {
     console.log(input);
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-// Event listeners
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 

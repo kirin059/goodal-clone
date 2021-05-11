@@ -33,29 +33,26 @@ nav {
     padding: 0;
     width: 1000px;
     height: 102px;
-    
     text-align: center;
 }
 
 /* language list */
 .language_container {
     position: absolute;
-    /* left: 50%; */
-    top: 0;
+    top: 15px;
     width: 1000px;
-    /* margin: 0 0 0 -500px; */
     z-index: 1;
 
 }
+
 .language {
     display: flex;
     float: left;
-    margin: 7px 0 0;
     height: 26px;
 }
 
 .language .lang{
-    padding: 0 8px 0 9px;
+    padding: 0 7px 0 9px;
     color: var(--color-grey);
     font-weight: 600;
     font-size: 10px;
@@ -64,7 +61,7 @@ nav {
 }
 
 .lang::before {
-    margin-right: 9px;
+    margin-right: 8px;
     content:"|";
 }
 
@@ -76,15 +73,15 @@ nav {
     position: absolute;
     top: 5px;
     right: 0;
+    padding: 4px 10px;
     border: none;
     border-radius: 5px;
-    background-color: #7a7a7a;
-    color: #fafafa;
-    padding: 2px 5px;
+    background-color: #fbb23f;
+    color: #000;
     cursor: pointer;
 }
 
-/* modal */
+/* login modal */
 .modal_bg {
     display: none;
     position: absolute;
@@ -98,46 +95,55 @@ nav {
 }
 
 .modal_content {
-    position: absolute;
+    position: relative;
     top: calc(50% - 350px);
-    left: calc(50% - 400px);
+    left: calc(50% - 300px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 600px;
     height: 700px;
     padding: 40px;
-    background: #fff;
+    background: #fafafa;
+    border-radius: 5px;
 }
 
 #login_form {
     padding: 30px;
-    width: 400px;
+    width: 450px;
     max-height: 800px;
     background-color: #fafafa;
-    border: 1px solid #646464;
     border-radius: 5px;
     text-align: center;
 }
 
 #login_form h1 {
-    padding-bottom: 10px;
-    padding-right: 110px;
+    padding-bottom: 40px;
+    padding-right: 130px;
     color: teal;
     background-color: #fafafa;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: 800;
     text-align: center;
 }
 
 #login_form h1 img {
     position:absolute;
-    top:75px;
-    right: 250px;
+    top:60px;
+    right: 150px;
     width: 140px;
     height: 50px;
     padding: 0 10px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: teal;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 .form-control {
@@ -176,12 +182,17 @@ small {
     width: 100%;
     padding: 5px 0 5px 10px;
     border-radius: 5px;
+    border: 1px solid rgb(184, 182, 182);
     cursor: text;
+}
+
+.form-control input:active {
+    outline: none;
 }
 
 #submit {
     margin: 10px;
-    padding: 5px 10px;
+    padding: 10px 30px;
     color: #fafafa;
     background-color: teal;
     border: 1px solid teal;
