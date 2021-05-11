@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../../image/favicon-logo.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link href="../../../image/favicon-logo.png" rel="shortcut icon" type="image/x-icon" />
     <link href="./best.css" rel="stylesheet" />
-    <link href="../../../basic/basic.css" rel="stylesheet" />
+    <link href="../../..//main/index.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../../basic/basic.js" defer></script>
     <title>Goodal</title>
 </head>
 
 <body>
     <div class="container">
-        <!--nav-->
         <nav>
             <div class="language_container">
                 <ul class="language">
@@ -29,16 +29,53 @@
                 <button class="open">Log In</button>
             </div>
             <div class="head_nav">
-                <h1>
-                    <a href="index.html"></a>
-                </h1>
+                <h1></h1>
             </div>
             <fieldset>
                 <input class="search" type="text" placeholder="검색어를 입력해주세요" />
                 <button class="search_btn"></button>
             </fieldset>
-
         </nav>
+
+        <!--sub nav-->
+        <div class="sub_nav">
+            <ul class="sub_nav_lists">
+                <li class="sub_li">
+                    <a href="../nav/brand/brand_info/brand.html">브랜드</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">브랜드 소개</li>
+                        <li class="dropdown_li">매장 소개</li>
+                        <li class="dropdown_li">(주)클리오 기업소개</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="../../product/best/best.html">제품</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">BEST</li>
+                        <li class="dropdown_li">NEW</li>
+                        <li class="dropdown_li">카테고리별</li>
+                        <li class="dropdown_li">고민별</li>
+                        <li class="dropdown_li">원물별</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="../../media/media.html">미디어</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">영상광고</li>
+                        <li class="dropdown_li">인쇄광고</li>
+                        <li class="dropdown_li">매거진</li>
+                        <li class="dropdown_li">뉴스</li>
+                    </ul>
+                </li>
+                <li class="sub_li">
+                    <a href="../../comunity/comunity.html">커뮤니티</a>
+                    <ul class="dropdown">
+                        <li class="dropdown_li">베스트리뷰</li>
+                        <li class="dropdown_li">sns</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <!-- modal-->
         <div class="modal_bg">
@@ -70,46 +107,6 @@
                 </form>
 
             </div>
-        </div>
-
-        <!--sub nav-->
-        <div class="sub_nav">
-            <ul class="sub_nav_lists">
-                <li class="sub_li">
-                    <a href="../nav/brand/brand_info/brand.html">브랜드</a>
-                    <ul class="dropdown">
-                        <li class="dropdown_li">브랜드 소개</li>
-                        <li class="dropdown_li">매장 소개</li>
-                        <li class="dropdown_li">(주)클리오 기업소개</li>
-                    </ul>
-                </li>
-                <li class="sub_li">
-                    <a href="/">제품</a>
-                    <ul class="dropdown">
-                        <li class="dropdown_li">BEST</li>
-                        <li class="dropdown_li">NEW</li>
-                        <li class="dropdown_li">카테고리별</li>
-                        <li class="dropdown_li">고민별</li>
-                        <li class="dropdown_li">원물별</li>
-                    </ul>
-                </li>
-                <li class="sub_li">
-                    <a href="/">미디어</a>
-                    <ul class="dropdown">
-                        <li class="dropdown_li">영상광고</li>
-                        <li class="dropdown_li">인쇄광고</li>
-                        <li class="dropdown_li">매거진</li>
-                        <li class="dropdown_li">뉴스</li>
-                    </ul>
-                </li>
-                <li class="sub_li">
-                    <a href="/">커뮤니티</a>
-                    <ul class="dropdown">
-                        <li class="dropdown_li">베스트리뷰</li>
-                        <li class="dropdown_li">sns</li>
-                    </ul>
-                </li>
-            </ul>
         </div>
 
         <div class="main_head">
@@ -273,7 +270,6 @@
                 <h1 class="footer_logo">
                     <img src="../../../image/main-logo.png" alt="logo" />
                 </h1>
-
                 <div class="address">
                     <span>서울특별시 성동구 왕십리로 66 (주)클리오 / 대표이사 : 한현옥</span>
                     <span>COPYRIGHTS(C) 2016 CLUBCLIO.CO.LTD. ALL RIGHTS RESERVED.</span>
@@ -285,9 +281,9 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <script src="../../../basic/basic.js"></script>
+
+    <script src="../../../main/index.js"></script>
 </body>
 
 </html>

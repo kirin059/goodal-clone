@@ -112,14 +112,25 @@ prevBtn.addEventListener('click', e => {
 
 
 // modal
-$(document).ready(function () {
-    $('.open').click(function () {
-        $('.modal_bg').css({ "display": "block" })
-    })
+const bg = document.querySelector('.modal_bg');
+const modal = document.querySelector('.modal_content');
+const open = document.querySelector('.open');
+const close = document.querySelector('.closeBtn');
+const close2 = document.querySelector('#submit');
 
-    $('.closeBtn').click(function () {
-        $('.modal_bg').css({ "display": "none" })
-    })
+open.addEventListener('click', () => {
+    bg.style.display = 'block';
+    modal.style.display = 'block'
+});
+
+close.addEventListener('click', () => {
+    bg.style.display = 'none';
+    modal.style.display = 'none'
+});
+
+close2.addEventListener('click', () => {
+    bg.style.display = 'none';
+    modal.style.display = 'none'
 });
 
 
@@ -129,7 +140,6 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
-
 
 function showError(input, message) {
     console.log('input')
@@ -177,7 +187,6 @@ function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function (input) {
         if (input.value.length < 0) {
-            //값이 없으면
             showError(input, `${getFieldName(input)} is required`);
             isRequired = true;
         } else {
@@ -203,3 +212,31 @@ form.addEventListener("submit", function (e) {
         checkPasswordsMatch(password, password2);
     }
 });
+
+// nav 페이지이동
+const logoToMain = document.querySelector('.head_nav h1')
+const main = document.querySelector('.head_nav')
+const brand = document.querySelector(".moveToBrand")
+const store = document.querySelector(".moveToStore")
+const cop = document.querySelector(".moveToCop")
+
+logoToMain.addEventListener('click', () => {
+    location.href="./index.html"
+})
+
+main.addEventListener('click', () => {
+    location.href="./index.html"
+})
+
+brand.addEventListener('click', () => {
+    location.href="../nav/brand/brand_info/brand.html"
+})
+
+store.addEventListener('click', () => {
+    location.href="../nav/brand/store_info/store.html"
+})
+
+cop.addEventListener('click', () => {
+    location.href="../nav/brand/cop_info/cop.html"
+})
+    
