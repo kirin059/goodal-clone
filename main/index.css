@@ -280,6 +280,7 @@ fieldset {
 .sub_li {
     float: left;
     width: 25%;
+    cursor: pointer;
 }
 
 .sub_li a {
@@ -307,7 +308,16 @@ fieldset {
     z-index: -500;
 }
 
-.dropdown_li{
+.dropdown_li {
+    display: none;
+    z-index: 2;
+    padding: 10px;
+    overflow: hidden;
+    transition: border-color 200ms ease-in, padding 200ms ease-in,
+      max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.dropdown a{
     display: none;
     z-index: 2;
     padding: 10px;
@@ -324,6 +334,29 @@ fieldset {
 .dropdown_li.show {
     display: block;
 }
+
+/* .dropdown_li a.show {
+    display: block;
+} */
+
+.dropdown_li a{
+    display: none;
+    z-index: 2;
+    padding: 10px;
+    overflow: hidden;
+    transition: border-color 200ms ease-in, padding 200ms ease-in,
+      max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.dropdown_li {
+    display: none;
+    z-index: 2;
+    padding: 10px;
+    overflow: hidden;
+    transition: border-color 200ms ease-in, padding 200ms ease-in,
+      max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
 
 /* main */
 .slider {
@@ -406,12 +439,20 @@ h2 {
     box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
 }
 
+.best_new_li img:hover{
+    transform: scale(1.01)
+}
+
 .life_li img{
     display: inline-block;
     overflow: hidden;
     width: 320px;
     height: 320px;
     margin: 0 20px 0 0;
+}
+
+.life_li img:hover{
+    transform: scale(1.01)
 }
 
 .sns ul {
