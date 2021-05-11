@@ -1,4 +1,3 @@
-
 /* main head*/
 .main_head {
     display: flex;
@@ -15,13 +14,13 @@
     font-weight: 500;
 }
 
-.main_head span {
+.main_head h3 {
     position: absolute;
     top: 40px;
     left: 0;
     color: var(--color-grey);
     right: 0;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .main_nav {
@@ -37,7 +36,7 @@
 }
 
 .main_li {
-    width: 33.3%;
+    width: 50%;
     height: 40px;
     line-height: 40px;
     text-align: center;

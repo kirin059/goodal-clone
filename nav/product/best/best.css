@@ -1,18 +1,7 @@
-/* nav logo */
-
-
-.head_nav h1 { 
-    display: block;
-    width: 160px;
-    height: 60px;
-    margin: 21px auto;
-    background-image: url('../../../image/main-logo.png');
-    background-size: cover;
-    cursor: pointer;
-}
-
 /* main head*/
 .main_head {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 1000px;
     margin: 40px auto 0;
@@ -25,12 +14,13 @@
     font-weight: 500;
 }
 
-.main_head span {
+.main_head h3 {
     position: absolute;
-    top: 0;
+    top: 40px;
+    left: 0;
     color: var(--color-grey);
     right: 0;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .main_nav {

@@ -68,9 +68,6 @@ function hideDropLists(e) {
 
 
 
-
-
-
 // main > image slide
 let slideIndex = 1;
 let slides = document.querySelectorAll('.slide_li');
@@ -93,7 +90,7 @@ function showSlides(n) {
 
     slides[slideIndex - 1].style.display = "block";
 
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
+    setTimeout(showSlides, 4000); 
 }
 
 nextBtn.addEventListener('click', e => {
@@ -114,16 +111,16 @@ prevBtn.addEventListener('click', e => {
 // modal
 const bg = document.querySelector('.modal_bg');
 const modal = document.querySelector('.modal_content');
-const open = document.querySelector('.open');
-const close = document.querySelector('.closeBtn');
+const opens = document.querySelector('.open');
+const close1 = document.querySelector('.closeBtn');
 const close2 = document.querySelector('#submit');
 
-open.addEventListener('click', () => {
+opens.addEventListener('click', () => {
     bg.style.display = 'block';
     modal.style.display = 'block'
 });
 
-close.addEventListener('click', () => {
+close1.addEventListener('click', () => {
     bg.style.display = 'none';
     modal.style.display = 'none'
 });
