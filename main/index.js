@@ -113,7 +113,6 @@ const bg = document.querySelector('.modal_bg');
 const modal = document.querySelector('.modal_content');
 const opens = document.querySelector('.open');
 const close1 = document.querySelector('.closeBtn');
-const close2 = document.querySelector('#submit');
 
 opens.addEventListener('click', () => {
     bg.style.display = 'block';
@@ -125,10 +124,6 @@ close1.addEventListener('click', () => {
     modal.style.display = 'none'
 });
 
-close2.addEventListener('click', () => {
-    bg.style.display = 'none';
-    modal.style.display = 'none'
-});
 
 
 // log-in
