@@ -36,9 +36,6 @@ function shwoDropLists(e) {
 
     //console.log(e.path[0].localName)
 
-
-
-
     // 전체 dropdown되는 공식
     // for (let i = 0; i < dropdown.length; i++) {
     //     dropdown[i].classList.add('show');
@@ -46,7 +43,6 @@ function shwoDropLists(e) {
 
 
     // console.log(e.target.nextElementSibling.children[0])
-
 }
 
 function hideDropLists(e) {
@@ -112,14 +108,14 @@ prevBtn.addEventListener('click', e => {
 const bg = document.querySelector('.modal_bg');
 const modal = document.querySelector('.modal_content');
 const opens = document.querySelector('.open');
-const close1 = document.querySelector('.closeBtn');
+const close = document.querySelector('.closeBtn');
 
 opens.addEventListener('click', () => {
     bg.style.display = 'block';
     modal.style.display = 'block'
 });
 
-close1.addEventListener('click', () => {
+close.addEventListener('click', () => {
     bg.style.display = 'none';
     modal.style.display = 'none'
 });

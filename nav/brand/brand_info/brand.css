@@ -46,10 +46,15 @@
 }
 
 .main_li a {
+    display: block;
     color: #444444;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
+}
+
+.main_li a:hover {
+    color: #fff;
 }
 
 .main_li:hover {
@@ -57,9 +62,6 @@
     background-color: #444444;
 }
 
-.main_li a:hover {
-    color: #fff;
-}
 
 .current {
     background: #444444;

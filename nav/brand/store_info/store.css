@@ -45,6 +45,7 @@
 }
 
 .main_li a {
+    display: block;
     color: #444444;
     text-decoration: none;
     font-size: 14px;
@@ -68,3 +69,79 @@
     color: #fff;
     font-weight: 600;
 }
+
+.contry {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 40px auto 0;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contry li {
+    padding: 0 20px;
+    color: #2d550f;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.korea {
+    border-bottom: 2px solid #262626;
+}
+
+.korea::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin: -6px 0 0;
+    background: #a7a7a7;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 1000px;
+    margin: 20px auto 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+.content_text {
+    margin-left: 10px;
+}
+
+.content_text::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 3%;
+    width: 3px;
+    height: 15px;
+    margin: 0 3px 0 0;
+    background: #363636;
+}
+
+.content .content_pics {
+    background-image: url('./img/offShop_1.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 320px;
+    margin: 10px 0;
+}
+
+
+
