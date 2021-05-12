@@ -204,6 +204,7 @@ small {
 /* nav logo */
 .head_nav {
     display: flex;
+    justify-content: center;
     height: 100%;
     text-align: center;
     cursor: pointer;
@@ -217,6 +218,12 @@ small {
     background-image: url(../image/main-logo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.head_nav h1 a {
+    display: block;
+    margin: 21px auto;
     cursor: pointer;
 }
 
