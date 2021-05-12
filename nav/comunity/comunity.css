@@ -70,3 +70,64 @@
     font-weight: 600;
 }
 
+.contents_header {
+    display: flex;
+    width: 1000px;
+    margin: 40px auto 20px;
+    border: 1px solid #ccc;
+}
+
+
+.contents_img {
+    width: 500px;
+    height: 300px;
+    padding: 0;
+    background-image: url('./img/main_header_img.jpg');
+}
+
+.contents_text {
+    position: relative;
+    padding: 35px;
+    display: table-cell;
+    overflow: hidden;
+    width: 498px;
+    vertical-align: middle;
+    font-size: 24px;
+    margin: 0 0 70px;
+    text-align: center;
+}
+
+.contents_text img {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 92px;
+    margin: 0 0 70px;
+}
+
+.contents_text p {
+    margin-top: 50px;
+}
+
+.buttons {
+    position: absolute;
+    top: 550px;
+    right: 480px;
+    display: flex;
+}
+
+.buttons button {
+    width: 212px;
+    height: 39px;
+}
+.buttons button:first-child {
+    margin: 0 0.5% 0 0;
+    background: #fff;
+    border: 1px solid #787878;
+}
+
+.buttons button:last-child {
+    color: #fff;
+    background: #000;
+    border: 1px solid #787878;
+}

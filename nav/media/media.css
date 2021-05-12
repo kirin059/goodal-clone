@@ -70,3 +70,43 @@
     font-weight: 600;
 }
 
+.main_box {
+    display: flex;
+    width: 1000px;
+    margin: 40px auto 20px;
+    border: 1px solid #ccc;
+}
+
+.video {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 270px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text_contents {
+    float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 517px;
+    height: 270px;
+    padding: 30px;
+    color: #333;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.text_contents .tit {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5em;
+}
