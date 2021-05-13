@@ -2,7 +2,7 @@
 * 구달 웹사이트 클론 제작 프로젝트
 
 
-![shop](https://user-images.githubusercontent.com/71425369/118179893-d8b4da80-b470-11eb-8306-938ba8e035df.PNG)
+![goodal](https://user-images.githubusercontent.com/71425369/118186390-a5764980-b478-11eb-99c6-f10cf1a328b5.PNG)
 
 ## `Skill Stack`
 
